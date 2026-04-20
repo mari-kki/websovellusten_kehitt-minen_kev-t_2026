@@ -2,15 +2,34 @@
 <html lang="fi">
   <head>
     <title>Marikkis first HTML page</title>
+    <style>
+    h1 {
+      color: rgb(9, 125, 9);
+    }
+    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Welcome to my page!</h1>
-    <p>First year BBA student in Laurea</p>
-    <img
-      src="./images/Marikinkuva.jpg"
-      width="200"
-      height="250"
-      alt="Image link is broken">
+      <h1>Welcome to my page!</h1>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+     <main>
+    <img src="./images/Marikinkuva.jpg" alt="Sample Image" class="filter-image">
+          <blockquote class="quote">
+        practice makes progress.
+      </blockquote>
+           <section id="about">
+      <h2>About Me</h2>
+      <p>First year BBA student in Laurea</p>
+    </section>
 
     <h2>Hobbies</h2>
     <ol>
@@ -27,6 +46,28 @@
     </ul>
     <a href="https://www.laurea.fi">Visit Laurea</a>
 
+    <section id="services">
+      <h2>Services</h2>
+      <p>Ask me more information!</p>
+    </section>
+
+    <div class="flex-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+    <div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">6</div>
+</div>
+<div class="responsive-box">Resize the window to see the effect</div>
+
+
+</main>
     <table>
       <tr>
         <th>Course</th>
@@ -41,6 +82,15 @@
         <td>Jari Kovalainen</td>
       </tr>
     </table>
+        <section id="contact">
+      <h2>Contact</h2>
+      <p>By email or Phone</p>
+    </section>
+
+<div class="content-box">
+  <h3>Contact me!</h3>
+  <p>Not really!</p> <div class="animation-box"></div>
+</div>
 
     <form>
       <label for="name">Name:</label>
@@ -49,6 +99,16 @@
       <input type="email" id="email" name="email"><br><br>
       <input type="submit" value="Submit">
     </form>
+    <button class="transition-button">Skills I want to learn</button>
+    <ul class="pseudo-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript basics</li>
+        <li>UI design</li>
+        <li>Teamwork</li>
+      </ul>
+<footer>
+  <p>Copyright 2025</p>
+</footer>
 
   </body>
 </html>
