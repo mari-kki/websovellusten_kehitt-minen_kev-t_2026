@@ -1,81 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
   <head>
     <title>Marikkis first HTML page</title>
     <style>
-    h1 {
-      color: rgb(9, 125, 9);
-    }
+      h1 {
+        color: rgb(9, 125, 9);
+      }
     </style>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <h1>Welcome to my page!</h1>
+    <h1>Welcome to my page!</h1>
     <header>
+      <nav class="responsive-nav">
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="nav-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="responsive-nav">
-      <button class="menu-toggle">☰ Menu</button>
-      <ul class="nav-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+    <main>
+      <img
+        src="./images/Marikinkuva.jpg"
+        alt="Sample Image"
+        class="filter-image"
+      />
+      <blockquote class="quote">practice makes progress.</blockquote>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>First year BBA student in Laurea</p>
+      </section>
+
+      <h2>Hobbies</h2>
+      <ol>
+        <li>Jogging</li>
+        <li>Soccer</li>
+        <li>GYM</li>
+      </ol>
+      <img
+        src="./images/jalkapallonkuva.jpg"
+        alt="Responsive Image"
+        class="responsive-image"
+      />
+      <h2>Interests</h2>
+      <ul>
+        <li>Thrift stores</li>
+        <li>Travel</li>
+        <li>Playgrounds</li>
       </ul>
-    </nav>
-  </header>
-  
-     <main>
-    <img src="./images/Marikinkuva.jpg" alt="Sample Image" class="filter-image">
-          <blockquote class="quote">
-        practice makes progress.
-      </blockquote>
-           <section id="about">
-      <h2>About Me</h2>
-      <p>First year BBA student in Laurea</p>
-    </section>
+      <a href="https://www.laurea.fi">Visit Laurea</a>
 
-    <h2>Hobbies</h2>
-    <ol>
-      <li>Jogging</li>
-      <li>Soccer</li>
-      <li>GYM</li>
-    </ol>
-<img src="./images/jalkapallonkuva.jpg" alt="Responsive Image" class="responsive-image">
-    <h2>Interests</h2>
-    <ul>
-      <li>Thrift stores</li>
-      <li>Travel</li>
-      <li>Playgrounds</li>
-    </ul>
-    <a href="https://www.laurea.fi">Visit Laurea</a>
+      <section id="services">
+        <h2>Services</h2>
+        <p>Ask me more information!</p>
+      </section>
 
-    <section id="services">
-      <h2>Services</h2>
-      <p>Ask me more information!</p>
-    </section>
-
-    <div class="flex-container">
-  <div class="box">Box 1</div>
-  <div class="box">Box 2</div>
-  <div class="box">Box 3</div>
-</div>
-    <div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">3</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">4</div>
-  <div class="grid-item">6</div>
-</div>
-  <div class="media-query-box">Resize the window to see the effect</div>
-<div class="responsive-box">Resize the window to see the effect</div>
-<div class="responsive-container">
-
-      <div class="column">Column 1</div>
-      <div class="column">Column 2</div>
-    </div>
-
-
-</main>
+      <div class="flex-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">6</div>
+      </div>
+      <div class="media-query-box">Resize the window to see the effect</div>
+      <div class="responsive-box">Resize the window to see the effect</div>
+      <div class="responsive-container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+      </div>
+    </main>
     <table>
       <tr>
         <th>Course</th>
@@ -90,46 +92,47 @@
         <td>Jari Kovalainen</td>
       </tr>
     </table>
-        <section id="contact">
+    <section id="contact">
       <h2>Contact</h2>
       <p>By email or Phone</p>
     </section>
 
-<div class="content-box">
-  <h3>Contact me!</h3>
-  <p>Not really!</p> <div class="animation-box"></div>
-</div>
+    <div class="content-box">
+      <h3>Contact me!</h3>
+      <p>Not really!</p>
+      <div class="animation-box"></div>
+    </div>
 
     <form>
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name"><br><br>
+      <input type="text" id="name" name="name" /><br /><br />
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br><br>
-      <input type="submit" value="Submit">
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
     </form>
     <button class="transition-button">Skills I want to learn</button>
     <ul class="pseudo-list">
-        <li>HTML & CSS</li>
-        <li>JavaScript basics</li>
-        <li>UI design</li>
-        <li>Teamwork</li>
-      </ul>
-<footer>
-  <p>Copyright 2025</p>
-</footer>
+      <li>HTML & CSS</li>
+      <li>JavaScript basics</li>
+      <li>UI design</li>
+      <li>Teamwork</li>
+    </ul>
+    <footer>
+      <p>Copyright 2025</p>
+    </footer>
 
-<script>
-  const button = document.querySelector(".menu-toggle");
-  const navList = document.querySelector(".nav-list");
+    <script>
+      const button = document.querySelector(".menu-toggle");
+      const navList = document.querySelector(".nav-list");
 
-  button.addEventListener("click", () => {
-    if (navList.style.display === "flex") {
-      navList.style.display = "none";
-    } else {
-      navList.style.display = "flex";
-      navList.style.flexDirection = "column";
-    }
-  });
-</script>
+      button.addEventListener("click", () => {
+        if (navList.style.display === "flex") {
+          navList.style.display = "none";
+        } else {
+          navList.style.display = "flex";
+          navList.style.flexDirection = "column";
+        }
+      });
+    </script>
   </body>
 </html>
