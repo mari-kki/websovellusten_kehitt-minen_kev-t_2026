@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revontulimaailma</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Revontulimaailma</div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Etusivu</a></li>
+          <li><a href="#destinations">Kohteet</a></li>
+          <li><a href="#gallery">Galleria</a></li>
+          <li><a href="#contact">Ota yhteyttä</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Revontulien maailma</h1>
+        <p>
+          Tutustu Lapin upeisiin maisemiin, revontuliin ja unohtumattomiin
+          elämyksiin.
+        </p>
+        <a href="#destinations" class="button">Tutustu kohteisiin</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>Miksi Revontulimaailma?</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Luonto</h3>
+            <p>Koe Lapin rauhallinen luonto, tunturit ja kauniit revontulet.</p>
+          </div>
+
+          <div class="card">
+            <h3>Elämykset</h3>
+            <p>
+              Koiravaljakot, moottorikelkkailu, lumikenkäily ja mökkimajoitus.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Rentoutuminen</h3>
+            <p>Irtaudu arjesta ja nauti pohjoisen hiljaisuudesta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations">
+      <div class="container">
+        <h2>Suositut matkakohteet</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Rovaniemi</h3>
+            <p>Joulupukin kotikaupunki ja suosittu matkailukohde.</p>
+          </div>
+
+          <div class="card">
+            <h3>Levi</h3>
+            <p>Tunnettu laskettelu- ja talvilomakohde.</p>
+          </div>
+
+          <div class="card">
+            <h3>Inari</h3>
+            <p>Kaunis luontokohde saamelaiskulttuurin keskellä.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>Galleria</h2>
+
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="./images/revontulet.jpg" alt="Revontulet">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/tunturireitti.jpg" alt="Tunturireitti">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/lumimetsa.jpg" alt="Lumimetsä">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/mokki.avif" alt="Mökki">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/tahtitaivas.jpg" alt="Tähtitaivas">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/nuotioilta.avif" alt="Nuotioilta">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Ota yhteyttä</h2>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Nimi" aria-label="Nimi">
+          <input
+            type="email"
+            placeholder="Sähköposti"
+            aria-label="Sähköposti"
+          >
+          <textarea
+            rows="6"
+            placeholder="Kirjoita viestisi"
+            aria-label="Viesti"
+          ></textarea>
+          <button type="submit">Lähetä viesti</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Revontulimaailma</p>
+    </footer>
+  </body>
+</html>
