@@ -19,7 +19,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(232, 31, 31, 0.8);
+  background: rgba(61, 184, 188, 0.8);
 }
 
 .navbar {
@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-  color: #34e3a9;
+  color: #2908cd;
   font-size: 28px;
   font-weight: bold;
 }
@@ -245,4 +245,22 @@ footer {
   .gallery {
     grid-template-columns: 1fr;
   }
+}
+
+.btn {
+  display: inline-block;
+  background-color: #7dd3fc;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background-color: #38bdf8;
+  transform: scale(1.05);
 }
